@@ -8,7 +8,7 @@
 </head>
 <body>
 <table width="200">
-<form id="inicio" name="form" method="post" action="">
+<form action="ABMServlet" method="post">
   <tr>
   
     <td>ID:</td>
@@ -90,10 +90,12 @@
     <td>&nbsp;</td>
     <td>
       <input type="submit" name="volver" id="volver" value="Volver" />
-      </form>
+      
     </td>
   </tr>
   
 </table>
+</form>
+
 </body>
 </html>
