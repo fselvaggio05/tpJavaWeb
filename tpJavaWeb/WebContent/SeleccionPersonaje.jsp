@@ -1,3 +1,4 @@
+<%@page import="entities.Personaje"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -7,23 +8,26 @@
 <title>Seleccion jugadores</title>
 </head>
 <body>
-<div>
+<form action="SeleccionPersServlet" method="post" id="formSeleccion">
+
   <div align="center"><strong>Seleccion jugadores:</strong></div>
-</div>
-<div>
 
    	  <div align="center">Jugador 1: 
-	  <input type="text" name="jugador1" id="jugador1" />
-      <input type="button" name="buscar" id="buscar" value="Buscar" />
+	  <input type="text" name="txtJugador1" id="jugador1"  />
+      
 
-</div>
-<div>
+	  </div>
 
    	  <div align="center">Jugador 2: 
-	  <input type="text" name="jugador2" id="jugador2" />
-      <input type="button" name="buscar" id="buscar" value="Buscar" />
+	  <input type="text" name="txtJugador2" id="jugador2" />
+      <input type="submit" name="btnBuscar" id="buscar" value="Buscar" />
 
 
-</div>
+	 </div>
+	<% 
+		Personaje p1= ((Personaje)session.getAttribute("Jugador1"));
+		Personaje p2= ((Personaje)session.getAttribute("Jugador2"));
+	%>
+</form>
 </body>
 </html>

@@ -1,7 +1,7 @@
 package data;
 
 import java.sql.*;
-import util.*;
+import util.ApplicationException;
 
 public class FactoryConexion {
 
@@ -22,7 +22,7 @@ public class FactoryConexion {
 		try {
 			Class.forName(dbDriver);
 		} catch (ClassNotFoundException e) {
-			throw new ApplicationException("Error del Driver JDBC",e);
+			throw new ApplicationException("Error del Driver JDBC");
 		}
 	}
 	
