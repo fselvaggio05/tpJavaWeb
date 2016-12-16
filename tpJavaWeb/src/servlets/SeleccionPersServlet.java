@@ -17,6 +17,7 @@ import entities.Personaje;
 @WebServlet("/SeleccionPersServlet")
 public class SeleccionPersServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	private CtrlCombate ctrl;
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -43,6 +44,10 @@ public class SeleccionPersServlet extends HttpServlet {
 		//Typo obj= (Typo)request.getSession().getAttribute("atrib");
 		//request.getSession().setAttribute("atrib", objeto);
 		//jsp -> session.getAttribute(...) o session.setAttribute(...) 
+		
+		ctrl=CtrlCombate.getInstanciaUnica();
+		request.getSession().setAttribute("Controlador",ctrl);
+		
 		String jugador1 = request.getParameter("txtJugador1");
 		String jugador2 = request.getParameter("txtJugador2");
 		Personaje per1, per2;
@@ -64,13 +69,13 @@ public class SeleccionPersServlet extends HttpServlet {
 			else{
 				per2 = ctrlABM.getPersonaje(jugador2);
 				request.getSession().setAttribute("Jugador1", per1);
-				request.getSession().setAttribute("Jugador", per2);
+				request.getSession().setAttribute("Jugador2", per2);
 		
 				}
 		
 		
 		//response.sendRedirect("WEB-INF/war.jsp");
-		request.getRequestDispatcher("/Combate.jsp").forward(request, response);
+		request.getRequestDispatcher("Combate.jsp").forward(request, response);
 		
 		
 		

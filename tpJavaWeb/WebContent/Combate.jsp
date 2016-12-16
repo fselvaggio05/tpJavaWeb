@@ -48,23 +48,25 @@
     <input type="text" name="vida2" id="vida2" value=<%=p2.getVida() %> />
     </td>
 </tr>
+
+
 <tr>
 	<td>Energia:  </td>
-    <td> <input type="text" name="energia1" id="energia1" value=<%=p1.getEnergia() %>/> </td>
+    <td> <input type="text" name="energia1" id="energia1" value=<%=p1.getEnergia()%>/> </td>
     <td></td>
     <td></td>
-    <td> <input type="text" name="energia2" id="energia2" value=<%=p2.getEnergia() %>/> </td>
+    <td> <input type="text" name="energia2" id="energia2" value=<%=p2.getEnergia()%>/> </td>
 </tr>
 <tr>
 	<td>Defensa:</td>
-    <td><input type="text" name="defensa1" id="defensa1" value=<%=p1.getDefensa() %> /> </td>
+    <td><input type="text" name="defensa1" id="defensa1" value=<%=p1.getDefensa() %> /></td>
     <td></td>
     <td></td>
-    <td> <input type="text" name="defensa2" id="defensa2" value=<%p2.getDefensa();%> />  </td>
+    <td> <input type="text" name="defensa2" id="defensa2" value=<%p2.getDefensa() %> /></td>
 </tr>
 <tr>
 	<td>Evasion:</td>
-    <td><input type="text" name="evasion1" id="evasion2" value=<%p1.getEvasion(); %>/></td>
+    <td><input type="text" name="evasion1" id="evasion2" value=<%p1.getEvasion() %>></td>
     <td></td>
     <td></td>
     <td>  <input type="text" name="evasion2" id="evasion2" value=<%p2.getEvasion(); %>/>  </td>
@@ -72,7 +74,7 @@
 
 <tr>
 	<td>Turno:</td>
-    <td><input type="text" name="turno" id="turno" value=<%ctrl.getPersonajeTurno();%>/></td>   
+    <td><input type="text" name="turno" id="turno" value=<%ctrl.getPersonajeTurno(); %>/></td>   
 </tr>
 
 <tr>

@@ -43,8 +43,8 @@ public class CombateServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		
 		
-		ctrl=CtrlCombate.getInstanciaUnica();
-		request.getSession().setAttribute("Jugador1", ctrl);
+		
+		
 		
 		Personaje p1 = (Personaje)request.getSession().getAttribute("Jugador1");
 		Personaje p2 = (Personaje)request.getSession().getAttribute("Jugador2");

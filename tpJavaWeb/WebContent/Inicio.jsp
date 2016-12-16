@@ -8,23 +8,24 @@
 </head>
 <body>
 <table width="200" >
+<form id="form1" name="form1" method="post" action="">
   <tr> Menu principal </tr>
   <tr>
-    <td>&nbsp;</td>
-    <td><form id="form1" name="form1" method="post" action="">
+    
+    <td>
       <input type="button" name="ambPersonajes" id="ambPersonajes" value="Personajes" />
-      
-    </form></td>
-    <td>&nbsp;</td>
+    </td>
   </tr>
   
+  
   <tr>
-    <td>&nbsp;</td>
-    <td><form id="form2" name="form2" method="post" action="">
+  
+    <td>
       <input type="submit" name="jugar" id="jugar" value="Comenzar partida" />
     </form></td>
-    <td>&nbsp;</td>
+   
   </tr>
+  </form>
 </table>
 </body>
 </html>
