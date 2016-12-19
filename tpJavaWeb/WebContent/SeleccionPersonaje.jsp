@@ -27,6 +27,7 @@
 	<% 
 		Personaje p1= ((Personaje)session.getAttribute("Jugador1"));
 		Personaje p2= ((Personaje)session.getAttribute("Jugador2"));
+		
 	%>
 </form>
 </body>

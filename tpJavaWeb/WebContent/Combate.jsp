@@ -52,29 +52,36 @@
 
 <tr>
 	<td>Energia:  </td>
-    <td> <input type="text" name="energia1" id="energia1" value=<%=ctrl.getJugador1().getEnergiaActual()%>/> </td>
+    <td> <input type="text" name="energia1" id="energia1" value=<%=ctrl.getJugador1().getEnergiaActual()%>/> 
+    </td>
     <td></td>
     <td></td>
-    <td> <input type="text" name="energia2" id="energia2" value=<%=ctrl.getJugador2().getEnergiaActual()%>/> </td>
+    <td> <input type="text" name="energia2" id="energia2" value=<%=ctrl.getJugador2().getEnergiaActual()%>/> 
+    </td>
 </tr>
 <tr>
 	<td>Defensa:</td>
-    <td> <input type="text" name="defensa1" id="defensa1" value=<%=ctrl.jugador1.getDefensa()%>/></td>
+    <td> <input type="text" name="defensa1" id="defensa1" value=<%=ctrl.jugador1.getDefensa()%>/>
+    </td>
     <td></td>
     <td></td>
-    <td> <input type="text" name="defensa2" id="defensa2" value=<%=ctrl.jugador2.getDefensa()%>/></td>
+    <td> <input type="text" name="defensa2" id="defensa2" value=<%=ctrl.jugador2.getDefensa()%>/>
+    </td>
 </tr>
 <tr>
 	<td>Evasion:</td>
-    <td> <input type="text" name="evasion1" id="evasion2" value=<%=ctrl.jugador1.getEvasion()%>></td>
+    <td> <input type="text" name="evasion1" id="evasion2" value=<%=ctrl.jugador1.getEvasion()%>>
+    </td>
     <td></td>
     <td></td>
-    <td>  <input type="text" name="evasion2" id="evasion2" value=<%=ctrl.jugador2.getEvasion()%>/>  </td>
+    <td>  <input type="text" name="evasion2" id="evasion2" value=<%=ctrl.jugador2.getEvasion()%>/>
+    </td>
 </tr>
 
 <tr>
 	<td>Turno:</td>
-    <td> <input type="text" name="turno" id="turno" value=<%=ctrl.getPersonajeTurno().getNombre()%>/></td>   
+    <td> <input type="text" name="turno" id="turno" value=<%=ctrl.getPersonajeTurno().getNombre()%>/>
+    </td>   
 </tr>
 
 <tr>
@@ -84,6 +91,7 @@
     <td><input type="submit" name="accion" id="atacar" value="Atacar"/></td>
     <td><input type="submit" name="accion" id="defender" value="Defender" /></td>
 </tr>
+
  </table>
 </div>
 </form>

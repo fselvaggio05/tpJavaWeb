@@ -73,15 +73,16 @@ public class SeleccionPersServlet extends HttpServlet {
 				request.getSession().setAttribute("Jugador2", per2);
 		
 				}
-		
+	
 		ctrl.setJugadores(per1, per2);
-		//response.sendRedirect("WEB-INF/war.jsp");
+	
+		//response.sendRedirect("Combate.jsp");
 		request.getRequestDispatcher("Combate.jsp").forward(request, response);
 		
+	}	
 		
 		
 		
-		
-	}
+	
 
 }

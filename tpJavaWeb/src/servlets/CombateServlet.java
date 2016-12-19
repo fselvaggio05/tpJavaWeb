@@ -71,18 +71,21 @@ public class CombateServlet extends HttpServlet {
 					}else{
 							if(ctrl.jugadorEvadio)
 								{
-									JOptionPane.showMessageDialog(null, "Ataque Evadido");
+									//JOptionPane.showMessageDialog(null, "Ataque Evadido");
+								    System.out.println("ataque evadido");
 									ctrl.finTurno();
 						
 						
 								}else{
 										if(ctrl.jugadorSinEnergia)
 											{
-												JOptionPane.showMessageDialog(null, ctrl.persTurno.getNombre() + " no dispone de esa energía");
+											    System.out.println(ctrl.persTurno.getNombre() + "no dispone esa energia");
+												//JOptionPane.showMessageDialog(null, ctrl.persTurno.getNombre() + " no dispone de esa energía");
 											}else{
-													
-													JOptionPane.showMessageDialog(null, "Fin del Juego");
-													JOptionPane.showMessageDialog(null, "Ha ganado el personaje " + ctrl.persSinTurno.getNombre());
+												System.out.println("fin del juego");
+												System.out.println("ha ganado el personaje" + ctrl.persSinTurno.getNombre());
+													//JOptionPane.showMessageDialog(null, "Fin del Juego");
+													//JOptionPane.showMessageDialog(null, "Ha ganado el personaje " + ctrl.persSinTurno.getNombre());
 													ctrl.asignarPuntos();
 													
 												 }
