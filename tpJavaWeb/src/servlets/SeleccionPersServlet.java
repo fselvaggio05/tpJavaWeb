@@ -52,6 +52,7 @@ public class SeleccionPersServlet extends HttpServlet {
 		String jugador2 = request.getParameter("txtJugador2");
 		Personaje per1, per2;
 		
+		
 		CtrlABMCPersonaje ctrlABM = new CtrlABMCPersonaje();
 		
 		per1= ctrlABM.getPersonaje(jugador1);
@@ -73,7 +74,7 @@ public class SeleccionPersServlet extends HttpServlet {
 		
 				}
 		
-		
+		ctrl.setJugadores(per1, per2);
 		//response.sendRedirect("WEB-INF/war.jsp");
 		request.getRequestDispatcher("Combate.jsp").forward(request, response);
 		
